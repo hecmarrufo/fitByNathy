@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import gsap from "gsap";
 import Image0 from "../images/IMG_4594-removebg-preview.png";
 import Image1 from "../images/IMG_4598-removebg-preview.png";
 import Image2 from "../images/IMG_4654-removebg-preview.png";
