@@ -7,7 +7,7 @@ import Contact from "./pages/contact/Contact";
 import Gallery from "./pages/gallery/Gallery";
 import NotFound from "./pages/notFound/NotFound";
 import Plans from "./pages/plans/Plans";
-// import Trainers from "./pages/trainers/Trainers";
+import Trainers from "./pages/trainers/Trainers";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -17,7 +17,7 @@ const App = () => {
 			<Navbar />
 			<Routes>
 				<Route index element={<Home />} />
-				<Route path="naty" element={<About />} />
+				<Route path="tienda" element={<Trainers />} />
 				<Route path="contacto" element={<Contact />} />
 				<Route path="galeria" element={<Gallery />} />
 				<Route path="planes" element={<Plans />} />

@@ -12,10 +12,7 @@ import "./trainers.css";
 const Trainers = () => {
 	return (
 		<>
-			<Header image={HeaderImage} title="Our Trainers">
-				Adipisicing labore laboris ea sunt cillum ea velit.Adipisicing labore la
-				boris ea sunt cillum ea velit. sunt cillum ea velit.
-			</Header>
+			<Header image={HeaderImage} title="Mi Tiendita" />
 			<section className="trainers">
 				<div className="container trainers__container">
 					{trainers.map(({ id, image, name, job, socials }) => {

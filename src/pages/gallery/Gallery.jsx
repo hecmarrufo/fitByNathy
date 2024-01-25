@@ -13,9 +13,9 @@ function Gallery() {
 
 	return (
 		<>
-			<Header title="Our Gallery" image={HeaderImage}>
-				Quisquam id tenetur adipisci nesciunt ipsum amet in quibusdam,
-				architecto nostrum nobis, est, deserunt odio illum perspiciatis
+			<Header title="Casos de Éxito" image={HeaderImage}>
+				Hacemos homenaje al increible trabajo logrado por todos los miembros de la comunidad.<br/>
+				¿Qué estas esperando? Súmate tu también!
 			</Header>
 			<section className="gallery">
 				<div className="container gallery__container">

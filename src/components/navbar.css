@@ -30,7 +30,7 @@ nav{
 
 .nav__links{
     display: flex;
-    gap: 1.5rem;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -56,9 +56,118 @@ nav{
     height: 1.2rem;
     position: absolute;
     left: calc(50% - 0.6rem);
+    top: calc(50% - 0.6rem);
     transform: rotate(45deg);
     background-color: var(--color-secondary);
     filter: blur(15px);
+}
+
+.currency-toggle {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    padding: 4px;
+    border-radius: 40px;
+}
+
+.currency-toggle-wrapper:before , .currency-toggle-wrapper:after {
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    /* top: 28px; */
+    font-size: 13px;
+    font-weight: 700;
+}
+.currency-toggle-wrapper:before {
+    transform: translate(-115%, 50%);
+    content: attr(data-first);
+}
+
+.currency-toggle-wrapper:after {
+    transform: translate(15%, 50%);
+    content: attr(data-second);
+}
+.currency-toggle-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #c0e6f6;
+    border-radius: 40px;
+    border: 4px solid #81c0d5;
+    transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.currency-toggle-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.currency-toggle-switch {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-left: 32px;
+    border: 4px solid #e4c74d;
+    border-radius: 50%;
+    overflow: hidden; /* Add this line */
+    transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.currency-toggle-switch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fcd116 50%, #003893 50%, #003893 75%, #ce1126 75%);
+}
+
+
+.currency-toggle-input:checked {
+    ~.currency-toggle-switch {
+        margin-left: 0;
+        border-color: #dee1c5;
+        background-color: #fffdf2;
+    }
+    ~.currency-toggle-switch::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+        linear-gradient(0deg, #003893, #003893),
+        repeating-linear-gradient(180deg,
+        #ce1126, #ce1126 13%, white 13%, white 26%);
+        background-size: 50% 60%, 100% 100%;
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+
+    ~.currency-toggle-bg {
+        background-color: #85BB65;
+        border-color: #4b6e37;
+    }
+
+    ~.currency-toggle-switch .currency-toggle-switch-figure {
+        margin-left: 40px;
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    ~.currency-toggle-switch .currency-toggle-switch-figureAlt {
+        transform: scale(1);
+    }
 }
 
  /******************** MEDIA QUERIES (mesium and small screens) ********************/
