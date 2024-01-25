@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
 import Home from "./pages/spa/home";
-import About from "./pages/about/About";
+// import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Gallery from "./pages/gallery/Gallery";
 import NotFound from "./pages/notFound/NotFound";
