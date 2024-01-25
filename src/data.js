@@ -1,4 +1,3 @@
-import {SiOpenaigym} from 'react-icons/si'
 import { TbBarbell } from "react-icons/tb";
 import { TbTreadmill } from "react-icons/tb";
 import { TbCarrot } from "react-icons/tb";
