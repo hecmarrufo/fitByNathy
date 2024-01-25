@@ -2,6 +2,11 @@ import {SiOpenaigym} from 'react-icons/si'
 import { TbBarbell } from "react-icons/tb";
 import { TbTreadmill } from "react-icons/tb";
 import { TbCarrot } from "react-icons/tb";
+import { BsPersonArmsUp } from "react-icons/bs";
+import { FaHandsHelping } from "react-icons/fa";
+import { MdSchedule } from "react-icons/md";
+import { GiForkKnifeSpoon } from "react-icons/gi";
+
 
 export const links = [
     {
@@ -29,7 +34,7 @@ export const links = [
 export const programs = [
     {
         id: 1,
-        icon: <TbTreadmill />,
+        icon: <TbTreadmill/>,
         type: 'regular',
         title: "Cero Excusas",
         info: "Entrena con nosotros desde casa, clases todos los días online",
@@ -53,7 +58,7 @@ export const programs = [
     },
     {
         id: 4,
-        icon: <TbCarrot />,
+        icon: <GiForkKnifeSpoon/>,
         type: 'regular',
         title: "Plan de Alimentación",
         info: "Diseñemos juntos un plan de alimentación a tu medida",
@@ -66,25 +71,25 @@ export const programs = [
 export const values = [
     {
         id: 1,
-        icon: <SiOpenaigym/>,
+        icon: <BsPersonArmsUp/>,
         title: "Charlas Motivacionales",
         desc: "Tenemos charlas donde conversaremos sobre nuestros procesos, nos conoceremos muchisimo mas y compartiremos experiencias"
     },
     {
         id: 2,
-        icon: <SiOpenaigym/>,
+        icon: <TbCarrot/>,
         title: "Plan Alimenticio",
         desc: "Todos mis programas incluyen un plan de alientacion basico, tambien incluyendo suplementación, con productos sugeridos"
     },
     {
         id: 3,
-        icon: <SiOpenaigym/>,
+        icon: <FaHandsHelping/>,
         title: "Acompañamiento en el Proceso",
         desc: "Estaré en todos nuestros encuentros para acompañarte y guiarte en todos tus ejercicios"
     },
     {
         id: 4,
-        icon: <SiOpenaigym/>,
+        icon: <MdSchedule />,
         title: "Facilidad de Horarios",
         desc: "Todos nuestros programas son online, y accesibles desde la comodidad del espacio que tú elijas"
     }
