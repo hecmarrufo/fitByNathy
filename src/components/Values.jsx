@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../images/values.jpg";
-import Video from "../images/valuesVideo.mp4"
+import Video from "../images/vid-valores-copy.mp4"
 import SectionHead from "./SectionHead";
 import { GiCutDiamond } from "react-icons/gi";
 import { values } from "../data";

@@ -72,9 +72,8 @@ nav{
 
 .currency-toggle-wrapper:before , .currency-toggle-wrapper:after {
     position: absolute;
-    color: white;
+    color: var(--color-gray-600);
     font-family: 'Raleway', sans-serif;
-    /* top: 28px; */
     font-size: 13px;
     font-weight: 700;
 }

@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-// NavLink comes with an isactive prop which we can use to detect which page we on
-// so we can have a special style for that link
 import React from "react";
 import Logo from "../images/v-logo.png";
 import CurrencySelector from "./CurrencySelector";

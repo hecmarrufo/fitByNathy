@@ -297,48 +297,69 @@ const Trainer3 = require('./images/trainer3.jpg')
 const Trainer4 = require('./images/trainer4.jpg')
 const Trainer5 = require('./images/trainer5.jpg')
 const Trainer6 = require('./images/trainer6.jpg')
+const Taza = require('./images/taza_blanca.jpg')
 
-export const trainers = [
+export const productos = [
+    // {
+    //     id: 1,
+    //     image: Trainer1,
+    //     name: 'John Doe',
+    //     job: 'Aerobic Trainer',
+    //     socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+    // },
+    // {
+    //     id: 2,
+    //     image: Trainer2,
+    //     name: 'Daniel vinyo',
+    //     job: 'Speed Trainer',
+    //     socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+    // },
+    // {
+    //     id: 3,
+    //     image: Trainer3,
+    //     name: 'Edem Quist',
+    //     job: 'Flexibility Trainer',
+    //     socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+    // },
+    // {
+    //     id: 4,
+    //     image: Trainer4,
+    //     name: 'Shatta Wale',
+    //     job: 'Body Composition Trainer',
+    //     socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+    // },
+    // {
+    //     id: 5,
+    //     image: Trainer5,
+    //     name: 'Diana Ayi',
+    //     job: 'Circuit Trainer',
+    //     socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+    // },
     {
         id: 1,
-        image: Trainer1,
-        name: 'John Doe',
-        job: 'Aerobic Trainer',
-        socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
+        image: Taza,
+        name: 'Taza Fit by Naty',
+        job: 'Physical Intelligence Trainer',
+        price_col:'4000',
+        price_usd:'1',
+        socials: []
     },
     {
         id: 2,
-        image: Trainer2,
-        name: 'Daniel vinyo',
-        job: 'Speed Trainer',
-        socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
-    },
-    {
-        id: 3,
-        image: Trainer3,
-        name: 'Edem Quist',
-        job: 'Flexibility Trainer',
-        socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
-    },
-    {
-        id: 4,
-        image: Trainer4,
-        name: 'Shatta Wale',
-        job: 'Body Composition Trainer',
-        socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
-    },
-    {
-        id: 5,
-        image: Trainer5,
-        name: 'Diana Ayi',
-        job: 'Circuit Trainer',
-        socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
-    },
-    {
-        id: 6,
         image: Trainer6,
         name: 'Wayne Carter',
         job: 'Physical Intelligence Trainer',
-        socials: ['https://instagram.com/', 'https://twitter.com/', 'https://facebook.com/', 'https://linkedin.com/']
-    }
+        price_col:'4000',
+        price_usd:'1',
+        socials: []
+    },
+    {
+        id: 3,
+        image: Trainer6,
+        name: 'Wayne Carter',
+        job: 'Physical Intelligence Trainer',
+        price_col:'4000',
+        price_usd:'1',
+        socials: []
+    },
 ]
