@@ -21,22 +21,22 @@ const Testimonial = () => {
 			setIndex(0);
 		}
 	};
-
 	useEffect(() => {
 		const interval = setInterval(() => {
-			// console.log(index);
-			// gsap.fromTo(`.card-${id}`, {
-			// 	autoAlpha: -10,
-			// 	onComplete: () => {
-				  handleAfterTestimonial()
-			// 	}
-			//   },
-			//   {
-			// 	duration: 0.5,
-			// 	autoAlpha: 1,
-			//   })
+			gsap.fromTo(`.card-${id}`, {
+				autoAlpha: -10,
+				onComplete: () => {
+					/* eslint-disable no-unused-expressions */
+					handleAfterTestimonial
+				}
+			},
+			{
+				duration: 0.5,
+				autoAlpha: 1,
+			})
 		}, 2500);
-         return () => clearInterval(interval); 
+		return () => clearInterval(interval); 
+	// eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
 
