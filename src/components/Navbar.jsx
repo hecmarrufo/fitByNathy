@@ -19,7 +19,7 @@ const Navbar = () => {
 
 	return (
 		<nav>
-			<div className="container nav__container">
+			<div className="container nav__container nav">
 				<Link to="/" className="logo" onClick={handleNavToggle}>
 					<img src={Logo} alt="Nav-logo" />
 				</Link>

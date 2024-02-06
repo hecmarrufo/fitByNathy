@@ -182,7 +182,7 @@
     margin-top: 5rem;
 }
 
-.testimonial__avatar {
+.testimonial__heart {
     position: absolute;
     width: 4rem;
     height: 4rem;
@@ -195,7 +195,7 @@
     transition: var(--transition);
 }
  
-.testimonial:hover .testimonial__avatar{
+.testimonial:hover .testimonial__heart{
     border-radius: 50%;
     border-color: var(--color-gray-400);
 }
