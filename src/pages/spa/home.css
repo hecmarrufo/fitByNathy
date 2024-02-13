@@ -316,6 +316,7 @@
     position: relative;
     text-align: left;
     margin-top: 5rem;
+    overflow: hidden;
 }
 
 .testimonial__heart {
@@ -325,6 +326,7 @@
     top: -3rem;
     right: -2rem;
     transition: var(--transition);
+    z-index: 2;
 }
 .card.testimonial {
     box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4) ;
@@ -353,10 +355,24 @@
 
 .review__container {
     height: 20rem;
+    position: relative;
 }
 .starRating{
     font-size: 1.5rem;
 
+}
+.progressBar {
+    width: 90%;
+    color: var(--color-gray-200);
+    background: color-mix(in srgb, currentColor 40%, transparent);
+    height: 1vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.progressBar::-moz-progress-bar{
+    color: var(--main-purple);
+    background: color-mix(in srgb, currentColor 30%, transparent);
 }
 
 /******************** FOOTER STYLES ********************/

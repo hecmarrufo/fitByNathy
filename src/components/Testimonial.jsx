@@ -10,34 +10,26 @@ import gsap from "gsap";
 
 const Testimonial = () => {
 	const [index, setIndex] = useState(0);
+	const [click__flag, setClick__flag] = useState(true);
 	const { id, name, quote, job } = testimonials[index];
 
+	const handleFlagChange = () =>{ setClick__flag(!click__flag); };
 	const handleAfterTestimonial = () => {
 		setIndex((prevValue) => {
-			console.log('seveneleven1989',prevValue);
-			return prevValue + 1;
+			return (prevValue + 1 > testimonials.length - 1 ) ? 0 : prevValue + 1;
 		});
-		if (index >= testimonials.length - 1) {
-			setIndex(0);
-		}
 	};
+
+	
 	useEffect(() => {
-		const interval = setInterval(() => {
-			gsap.fromTo(`.card-${id}`, {
-				autoAlpha: -10,
-				onComplete: () => {
-					/* eslint-disable no-unused-expressions */
-					handleAfterTestimonial
-				}
-			},
-			{
-				duration: 0.5,
-				autoAlpha: 1,
-			})
-		}, 2500);
-		return () => clearInterval(interval); 
-	// eslint-disable-next-line react-hooks/exhaustive-deps
-    },[]);
+		if(document.querySelector('.testimonial')){
+			const changeIndex__tl = gsap.timeline({repeat: -1, repeatDelay: 1});
+			changeIndex__tl.from([".testimonial", '.testimonial__heart', '.progressBar'], {opacity:-10, duration:1.3})
+			changeIndex__tl.to([".testimonial", '.testimonial__heart', '.progressBar'], {opacity:1, duration:1})
+			changeIndex__tl.call(handleAfterTestimonial, [], "-=1.3")
+			changeIndex__tl.to('.progressBar', {value: 100, ease: 'none', duration: 10})
+		}
+	},[click__flag]);
 
 
 	return (
@@ -48,11 +40,11 @@ const Testimonial = () => {
 					title="Testimonios"
 					className="testimonials__head"
 				/>
-				<div className="review__container"  onClick={handleAfterTestimonial}>
-					<Card className={`testimonial cardo -${id}`}>
-						<div className="testimonial__heart">
-							<img src={Heart} alt="testimonios"/>
-						</div>
+				<div className="review__container"  onClick={handleFlagChange}>
+					<div className="testimonial__heart">
+						<img src={Heart} alt="testimonios"/>
+					</div>
+					<Card className={`testimonial card-${id}`}>
 						<h2>{name||"Anónimo"}</h2>
 						<small className="testimonial__title">{job}</small>
 						<p className="testimonial__quote">{`"${quote}"`}</p>
@@ -63,6 +55,7 @@ const Testimonial = () => {
 							<AiFillStar color='#f2b01e'/>
 							<AiFillStar color='#f2b01e'/>
 						</div>
+						<progress className="progressBar" value="0" max="100"></progress>
 					</Card>
 				</div>
 			</div>
